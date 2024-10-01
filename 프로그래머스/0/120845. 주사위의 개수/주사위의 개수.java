@@ -1,11 +1,11 @@
 class Solution {
     public int solution(int[] box, int n) {
-        // n은 주사위의 모서리의 길이로 가로, 세로, 높이의 나머지를 구하여 이들을 곱한다.
+        // 주사위 길이 : n, 직육면체 상자 길이 : 3(box)
+        // (가로 / n) * (세로 / n) * (높이 / n)
+        int answer = 0;
         
-        int a = box[0] / n; // 가로
-        int b = box[1] / n; // 세로
-        int c = box[2] / n; // 높이
+        answer = (box[0] / n) * (box[1] / n) * (box[2] / n);
         
-        return a * b * c;
+        return answer;
     }
 }
