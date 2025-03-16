@@ -3,8 +3,11 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String a = sc.next();
+        String str = sc.next();
+        int a = str.length();
         
-        System.out.println(a);
+        if(a >= 1 && a <= 1000000) {
+            System.out.println(str);
+        }
     }
 }
