@@ -6,10 +6,12 @@ public class Solution {
         String str = sc.next();
         int n = sc.nextInt();
         
-        // 1 ≤ str의 길이 ≤ 10 : str.length >= 1 && str.length <= 10
+        // 1 ≤ str의 길이 ≤ 10 : str.length() >= 1 && str.length() <= 10
         // 1 ≤ n ≤ 5
-        for(int i = 0; i < n; i++) {
-            System.out.print(str);
+        if(str.length() >= 1 && str.length() <= 10 && n >= 1 && n <= 5) {
+            for(int i = 0; i < n; i++) {
+                System.out.print(str);
+            }
         }
     }
 }
